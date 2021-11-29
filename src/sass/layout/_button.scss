@@ -1,0 +1,26 @@
+.btn {
+  @include rem(font-size, 32);
+  @include rem(height, 85);
+
+  background: $light-grey;
+  color: $white;
+  transition: background linear .25s;
+  width: 100%;
+
+  &:hover {
+    background-color: $light-grey-hover;
+  }
+
+  &__operation {
+    background: $orange;
+
+    &:hover {
+      background-color: $orange-hover;
+    }
+  }
+  
+  &__bold {
+    font-weight: $bold;
+  }
+
+}
