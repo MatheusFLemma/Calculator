@@ -26,100 +26,44 @@
 
       <div class="l-calculator__result">
 
-        <p id="result">0</p>
+        <input disabled id="result"></input>
+
       </div>
 
 
       <div class="grid">
         
-        <button class="btn btn__bold"
-                type="button">
-                CE
-        </button>
-        <button class="btn btn__bold"
-                type="button">
-                &radic;
-        </button>
-        <button class="btn btn__bold"
-                type="button">
-                %
-        </button>
-        <button class="btn btn__operation btn__bold"
-                type="button">
-                &divide;
-        </button>
+        <button onclick="clearResult()" class="btn btn__bold" type="button" aria-label="Clear button">AC</button>
+        <button onclick="invertValue()" class="btn btn__bold" type="button" aria-label="Sign invert button">+/-</button>
+        <button onclick="insertValues('7')" class="btn btn__bold" type="button" aria-label="Percentage button">%</button>
+        <button onclick="insertValues('/')" class="btn btn__operation btn__bold" type="button" aria-label="Division sign button">&divide;</button>
               
-        <button class="btn"
-                type="button">
-                7
-        </button>
-        <button class="btn"
-                type="button">
-                8
-        </button>
-        <button class="btn"
-                type="button">
-                9
-        </button>
-        <button class="btn btn__operation btn__bold"
-                type="button">
-                &times;
-        </button>
-
+        <button onclick="insertValues('7')" class="btn" type="button" aria-label="Number seven button">7</button>
+        <button onclick="insertValues('8')" class="btn" type="button" aria-label="Number eight button">8</button>
+        <button onclick="insertValues('9')" class="btn" type="button" aria-label="Number nine button">9</button>
+        <button onclick="insertValues('*')" class="btn btn__operation btn__bold" type="button" aria-label="Multiplication sign button">&times;</button>
                 
-        <button class="btn"
-                type="button">
-                4
-        </button>
-        <button class="btn"
-                type="button">
-                5
-        </button>
-        <button class="btn"
-                type="button">
-                6
-        </button>
-        <button class="btn btn__operation btn__bold"
-                type="button">
-                &minus;
-        </button>
+        <button onclick="insertValues('4')" class="btn" type="button" aria-label="Number four button">4</button>
+        <button onclick="insertValues('5')" class="btn" type="button" aria-label="Number five button">5</button>
+        <button onclick="insertValues('6')" class="btn" type="button" aria-label="Number six button">6</button>
+        <button onclick="insertValues('-')" class="btn btn__operation btn__bold" type="button" aria-label="Subtraction sign button">&minus;</button>
                 
-        <button class="btn"
-                type="button">
-                1
-        </button>
-        <button class="btn"
-                type="button">
-                2
-        </button>
-        <button class="btn"
-                type="button">
-                3                
-        </button>
-        <button class="btn btn__operation btn__bold"
-                type="button">
-                &plus;
-        </button>
+        <button onclick="insertValues('1')" class="btn" type="button" aria-label="Number one button">1</button>
+        <button onclick="insertValues('2')" class="btn" type="button" aria-label="Number two button">2</button>
+        <button onclick="insertValues('3')" class="btn" type="button" aria-label="Number three button">3</button>
+        <button onclick="insertValues('+')" class="btn btn__operation btn__bold" type="button" aria-label="Plus sign button">&plus;</button>
                 
-        <button class="btn zero"
-                type="button">
-                0
-        </button>
-        <button class="btn"
-                type="button">
-                &sdot;
-        </button>
-        <button class="btn btn__operation btn__bold"
-                id="equal"
-                type="button">
-                &equals;
-        </button>
+        <button onclick="insertValues('0')" class="btn zero" type="button" aria-label="Number zero button">0</button>
+        <button onclick="insertValues('.')" class="btn" type="button" aria-label="Decimal separator sign button">&sdot;</button>
+        <button onclick="calculate()" class="btn btn__operation btn__bold" id="equal" type="button" aria-label="Equal sign button">&equals;</button>
 
       </div>
 
     </div>
 
   </main>
+
+  <script src="src/js/app.js"></script>
 
 </body>
 

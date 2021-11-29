@@ -12,6 +12,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+input {
+  background: transparent;
+  border: none;
+}
+
 button[type="button"] {
   border: none;
   cursor: pointer;
@@ -64,17 +69,18 @@ button[type="button"] {
   padding: 1rem 1.5rem 0rem;
 }
 
-.l-calculator__result p {
+.l-calculator__result input:disabled {
   font-size: 4rem;
   color: #E9E8ED;
   text-align: end;
+  width: 100%;
 }
 
-.l-calculator__result p::-moz-selection {
+.l-calculator__result input::-moz-selection {
   background-color: #5D5E60;
 }
 
-.l-calculator__result p::selection {
+.l-calculator__result input::selection {
   background-color: #5D5E60;
 }
 

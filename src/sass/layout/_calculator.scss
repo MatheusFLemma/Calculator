@@ -12,11 +12,15 @@
     @include rem(height, 130);
     @include resultPadding(16, 24, 0);
 
-    p {
-      @include rem(font-size, 64);
+    input {
 
-      color: $white;
-      text-align: end;
+      &:disabled {
+        @include rem(font-size, 64);
+  
+        color: $white;
+        text-align: end;
+        width: 100%;
+      }
 
       &::selection {
         background-color: $light-grey;

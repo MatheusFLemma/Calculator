@@ -39,6 +39,11 @@ body {
   font-family: $font;
 }
 
+input {
+  background: transparent;
+  border: none;
+}
+
 button[type="button"] {
   border: none;
   cursor: pointer;
